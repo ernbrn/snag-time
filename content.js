@@ -18,6 +18,7 @@ chrome.runtime.onMessage.addListener(
         }
       } else {
         chrome.runtime.sendMessage({slotsA: true}, function () {
+          alert("HEY THERE ARE TIMES AVAILABLE")
           console.log('told background there are times available')
         })
       }
